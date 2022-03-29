@@ -1,0 +1,31 @@
+{
+  "name": "mission",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gudetanuki/Company-HomePage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gudetanuki/Company-HomePage/issues"
+  },
+  "homepage": "https://github.com/gudetanuki/Company-HomePage#readme",
+  "devDependencies": {
+    "import-glob-loader": "^1.1.0",
+    "laravel-mix": "^6.0.43",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0"
+  }
+}
