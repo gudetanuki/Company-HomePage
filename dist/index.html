@@ -5,108 +5,139 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone" rel="stylesheet">
   <title>株式会社ミッション</title>
 </head>
 <body>
   <header class="header">
     <div class="header-menu">
-      <div class="logo"></div>
+      <div class="header-logo"></div>
       <nav>
         <ul>
           <li><a href="#">商品一覧</a></li>
           <li><a href="#">レトルトカレーOEM開発</a></li>
           <li><a href="#">よくある質問</a></li>
           <li><a href="#">会社案内</a></li>
-          <li><a href="#">お問い合わせ</a></li>
         </ul>
       </nav> 
+      <a class="header-link-area" href="#">お問い合わせ
+        <span class="material-icons-outlined">
+          email
+        </span>
+      </a>
     </div>
   </header>
 
   <main>
     <section class="top-slide">
-      <p>想いをカタチに<br>ミッションのカレー</p>
+      <div class="catch-phrase">
+        <div class="catch-phrase-container">
+          <div>想いをカタチに</div>
+        </div>
+        <div class="catch-phrase-container">
+          <div>ミッションのカレー</div>
+        </div>
+      </div>
     </section>
 
     <section class="service">
-      <h1>私たちに出来ること
-        <span>- What We Can -</span>
-      </h1>
-      <div class="service-conteiner service-container-first">
-        <div class="service-image"></div>
+      <div class="title service-title">
+        <h1>私たちに出来ること<br>
+          <span>- What We Can -</span>
+        </h1>
+      </div>
+      <div class="service-container service-container-first">
+        <div class="service-image service-image-first"></div>
         <div class="service-text">
-          <h2>卸販売</h2>
-          <p>個性溢れるレトルトカレーを全国に卸販売しております。
-            大手量販店との長年の取引により築き上げた信頼のネットワークが自慢です。
-          </p>
-          <a href="#">詳しく見る</a>
+          <div class="service-text-container">
+            <h2>卸販売</h2>
+            <p>個性溢れるレトルトカレーを全国に卸販売しております。
+              大手量販店との長年の取引により築き上げた信頼のネットワークが自慢です。
+            </p>
+            <a href="#" class="button-small">詳しく見る</a>
+          </div>
         </div>
       </div>
-      <div class="service-conteiner service-container-second">
-        <div class="service-image"></div>
+      <div class="service-container service-container-second">
+        <div class="service-image service-image-second"></div>
         <div class="service-text">
-          <h2>OEM開発</h2>
-          <p>地域の特産品(畜産物・海産物・農産物)を活かしたレトルトカレーや、
-            企業のPBとしてのレトルトカレー開発に自信があります。
-          </p>
-          <a href="#">詳しく見る</a>
+          <div class="service-text-container">
+            <h2>OEM開発</h2>
+            <p>地域の特産品(畜産物・海産物・農産物)を活かしたレトルトカレーや、
+              企業のPBとしてのレトルトカレー開発に自信があります。
+            </p>
+            <a href="#" class="button-small">詳しく見る</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="items">
-      <h1>商品一覧
-        <span>- All Items -</span>
-      </h1>
+    <section class="item">
+      <div class="title item-title">
+        <h1>商品一覧<br>
+          <span>- All Items -</span>
+        </h1>
+      </div>
       <div class="item-container">
-        <div class="item-group item-group-first">
-          <a href="#" class="">
+        <div class="item-group">
+          <a href="#" class="item-group-first">
             <p>レトルトカレー<br>
               （自社商品）
             </p>
           </a>
         </div>
-        <div class="item-group item-group-second">
-          <a href="#" class="">
+        <div class="item-group">
+          <a href="#" class="item-group-second">
             <p>レトルトカレー<br>
               （OEM開発商品）
             </p>
           </a>
         </div>
-        <div class="item-group item-group-third">
-          <a href="#" class="">
+        <div class="item-group">
+          <a href="#" class="item-group-third">
             <p>その他食品</p>
           </a>
         </div>
       </div>
-      <a href="#">全ての商品を見る</a>
+      <a href="#" class="button">全ての商品を見る</a>
     </section>
 
     <section class="contact">
       <p>お気軽にお問い合わせください！</p>
-      <a href="#">お問い合わせはこちら</a>
+      <a href="#" class="button">お問い合わせはこちら</a>
     </section>
 
     <section class="news">
-      <h1>新着情報
-        <span>-  News -</span>
-      </h1>
-      <div class="news-container">
-
+      <div class="title news-title">
+        <h1>新着情報<br>
+          <span>-  News -</span>
+        </h1>
       </div>
-      <a href="#">新着情報一覧</a>
+      <div class="news-container">
+        <dl class="news-contents">
+          <dt>00.00.00</dt>
+          <dl>新商品のお知らせ</dl>
+          <dt>00.00.00</dt>
+          <dl>○○百貨店へ出店いたします！</dl>
+          <dt>00.00.00</dt>
+          <dl>新商品のお知らせ</dl>
+        </dl>
+      </div>
+      <a href="#" class="button">新着情報一覧</a>
     </section>
 
-    <footer>
+    <footer class="footer">
       <div class="footer-container">
         <div class="footer-icons">
-          <div class="logo"></div>
+          <div class="footer-logo"></div>
           <div class="sns-icons">
-            
+            <div class="icon icon-twitter"></div> 
+            <div class="icon icon-insta"></div> 
+            <div class="icon icon-facebook"></div> 
           </div>
         </div>
         <div class="footer-menu">
-          <div class="address">
+          <div class="footer-address">
             <p>〇〇市××区△△町11-11</p>
             <p>00-0000-0000</p>
           </div>
@@ -119,7 +150,7 @@
             </ul>
           </nav>
         </div>
-        <p>©️ 2022 mission</p>
+        <p class="copylight">©️ 2022 mission</p>
       </div>
     </footer>
   </main>

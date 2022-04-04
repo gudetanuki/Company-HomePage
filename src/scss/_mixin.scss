@@ -1,0 +1,24 @@
+@mixin top-slide-layout($image) {
+  background-image: url($image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+@mixin position($position) {
+  position: $position;
+}
+
+@mixin position-num($position, $top, $left) {
+  position: $position;
+  top: $top;
+  left: $left;
+  
+}
+
+@mixin font-size {
+  font-size: 100px;
+}
+
+
