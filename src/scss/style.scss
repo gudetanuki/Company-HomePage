@@ -2,6 +2,7 @@
 @import "base.scss";
 @import "variable.scss";
 @import "header.scss";
+@import "contact.scss";
 @import "footer.scss";
 @import "utility.scss";
 @import "mixin.scss";
@@ -16,7 +17,7 @@
 }
 
 .catch-phrase {
-  @include position(absolute);
+  position: absolute;
   bottom: 0;
   right: 0;
   display: inline-block;
@@ -108,7 +109,7 @@
       padding-bottom: 200px;
       margin: 0;
     }
-    p {
+    &-category{
       margin-top: 500px;
       font-size: $font-size-40;
       color: $font-color-white;
@@ -124,20 +125,6 @@
     }
   }
 
-}
-
-// ーーーーーーーーーーーーーーーーーーーーーー
-// お問い合わせはこちらから
-// ーーーーーーーーーーーーーーーーーーーーーー
-.contact {
-  height: 550px;
-  padding: 100px 0;
-  background: $bgclr-orange;
-  text-align: center;
-  p {
-    font-size: $font-size-60;
-    color: $font-color-white;
-  }
 }
 
 // ーーーーーーーーーーーーーーーーーーーーーーーー

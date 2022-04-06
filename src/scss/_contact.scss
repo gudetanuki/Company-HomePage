@@ -1,0 +1,14 @@
+
+// ーーーーーーーーーーーーーーーーーーーーーー
+// お問い合わせはこちらから
+// ーーーーーーーーーーーーーーーーーーーーーー
+.contact {
+  height: 550px;
+  padding: 100px 0;
+  background: $bgclr-orange;
+  text-align: center;
+  div {
+    font-size: $font-size-60;
+    color: $font-color-white;
+  }
+}
