@@ -97,9 +97,9 @@ span {
     font-size: $font-size-30;
     margin-right: 70px;
     a {
-      @include position(relative);
+      position: relative;
       &::after {
-        @include position(absolute);
+        position: absolute;
         bottom: 5px;
         left: 0;
         content: '';
