@@ -141,20 +141,18 @@
     width: 80%;
     margin: 0 auto;
     font-size: $font-size-40;
-    dt {
+    dt, dl {
       border-bottom: 3px solid $font-color-base;
       padding: 10px 50px 60px;
       margin-top: 80px;
-      float: left;
       cursor: pointer;
     }
+    dt {
+      float: left;
+    }
     dl {
-      border-bottom: 3px solid $font-color-base;
-      padding: 10px 0 60px;
       margin-left: 150px;
-      margin-top: 80px;
       text-align: left;
-      cursor: pointer;
     }
   }
 }

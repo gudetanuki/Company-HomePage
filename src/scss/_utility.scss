@@ -3,7 +3,7 @@
 // ーーーーーーーーーーーーーーーーーーーーー
 
 // ボタンのベースデザイン
-.button-base {
+%button-base {
   border: 1px solid $font-color-base;
   background-color: $bgclr-brown;
   transition: all .5s; 
@@ -16,7 +16,7 @@
 
 // サイト全体で使うボタンのデザイン
 .button {
-  @extend .button-base;
+  @extend %button-base;
   border-radius: 40px;
   padding: 50px 170px;
   margin: 120px auto;
@@ -25,7 +25,7 @@
 
 // TOPページの「わたしたちに出来ること」で使用する小さめボタン
 .button-small {
-  @extend .button-base;
+  @extend %button-base;
   border-radius: 30px;
   padding: 30px 70px;
   margin-right: 0;
@@ -37,10 +37,6 @@
 // ーーーーーーーーーーーーーーーーーーー
 // h1タグのレイアウト
 // ーーーーーーーーーーーーーーーーーーー
-span {
-  margin-top: 10px;
-  font-size: $font-size-40;
-}
 
 // TOPページの見出しh1タグのレイアウト
 .title {
@@ -48,6 +44,11 @@ span {
   margin: 0 auto 50px;
 }
 
+// 日本語見出し(h1)下の英語サブ(span)
+.sub-title {
+  margin-top: 10px;
+  font-size: $font-size-40;
+}
 // ーーーーーーーーーーーーーーーーーーーーーー
 // header部分のレイアウト
 // ーーーーーーーーーーーーーーーーーーーーーー
