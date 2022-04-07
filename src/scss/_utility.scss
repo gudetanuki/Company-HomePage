@@ -37,15 +37,17 @@
 // ーーーーーーーーーーーーーーーーーーー
 // h1タグのレイアウト
 // ーーーーーーーーーーーーーーーーーーー
-span {
-  margin-top: 10px;
-  font-size: $font-size-40;
-}
 
 // TOPページの見出しh1タグのレイアウト
 .title {
   text-align: center;
   margin: 0 auto 50px;
+}
+
+// 日本語見出し(h1)下の英語サブ(span)
+.sub-title {
+  margin-top: 10px;
+  font-size: $font-size-40;
 }
 
 // ーーーーーーーーーーーーーーーーーーーーーー
