@@ -6,10 +6,6 @@
   object-fit: cover;
 }
 
-@mixin position($position) {
-  position: $position;
-}
-
 @mixin position-num($position, $top, $left) {
   position: $position;
   top: $top;
@@ -17,8 +13,5 @@
   
 }
 
-@mixin font-size {
-  font-size: 100px;
-}
 
 

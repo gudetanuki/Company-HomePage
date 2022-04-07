@@ -2,6 +2,7 @@
 @import "base.scss";
 @import "variable.scss";
 @import "header.scss";
+@import "contact.scss";
 @import "footer.scss";
 @import "utility.scss";
 @import "mixin.scss";
@@ -16,7 +17,7 @@
 }
 
 .catch-phrase {
-  @include position(absolute);
+  position: absolute;
   bottom: 0;
   right: 0;
   display: inline-block;
@@ -65,9 +66,9 @@
     }
   }
   p {
+    font-size: $font-size-25;
     margin-top: 40px;
     margin-bottom: 20px;
-    font-size: $font-size-25;
   }
 }
 
@@ -108,7 +109,7 @@
       padding-bottom: 200px;
       margin: 0;
     }
-    p {
+    &-category{
       margin-top: 500px;
       font-size: $font-size-40;
       color: $font-color-white;
@@ -126,20 +127,6 @@
 
 }
 
-// ーーーーーーーーーーーーーーーーーーーーーー
-// お問い合わせはこちらから
-// ーーーーーーーーーーーーーーーーーーーーーー
-.contact {
-  height: 550px;
-  padding: 100px 0;
-  background: $bgclr-orange;
-  text-align: center;
-  p {
-    font-size: $font-size-60;
-    color: $font-color-white;
-  }
-}
-
 // ーーーーーーーーーーーーーーーーーーーーーーーー
 // 新着情報
 // ーーーーーーーーーーーーーーーーーーーーーーーー
@@ -154,20 +141,18 @@
     width: 80%;
     margin: 0 auto;
     font-size: $font-size-40;
-    dt {
+    dt, dl {
       border-bottom: 3px solid $font-color-base;
       padding: 10px 50px 60px;
       margin-top: 80px;
-      float: left;
       cursor: pointer;
     }
+    dt {
+      float: left;
+    }
     dl {
-      border-bottom: 3px solid $font-color-base;
-      padding: 10px 0 60px;
       margin-left: 150px;
-      margin-top: 80px;
       text-align: left;
-      cursor: pointer;
     }
   }
 }
