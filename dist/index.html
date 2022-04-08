@@ -10,14 +10,14 @@
 </head>
 <body>
   <header class="header">
-    <div class="header-menu">
+    <div class="header-menu flex">
       <div class="header-logo"></div>
       <nav>
-        <ul class="h-menu">
-          <li><a href="#">商品一覧</a></li>
-          <li><a href="#">レトルトカレーOEM開発</a></li>
-          <li><a href="#">よくある質問</a></li>
-          <li><a href="#">会社案内</a></li>
+        <ul class="menu">
+          <li class="menu-list"><a class="menu-link" href="#">商品一覧</a></li>
+          <li class="menu-list"><a class="menu-link" href="#">レトルトカレーOEM開発</a></li>
+          <li class="menu-list"><a class="menu-link" href="#">よくある質問</a></li>
+          <li class="menu-list"><a class="menu-link" href="#">会社案内</a></li>
         </ul>
       </nav> 
       <a class="header-link-area" href="#">お問い合わせ
@@ -47,7 +47,7 @@
           <span class="sub-title">- What We Can -</span>
         </h1>
       </div>
-      <div class="service-container service-container-first">
+      <div class="service-container service-container-first flex">
         <div class="service-image service-image-first"></div>
         <div class="service-text">
           <div class="service-text-container">
@@ -56,10 +56,11 @@
               大手量販店との長年の取引により築き上げた信頼のネットワークが自慢です。
             </p>
             <a href="#" class="button-small">詳しく見る</a>
+            <div class="clear"></div>
           </div>
         </div>
       </div>
-      <div class="service-container service-container-second">
+      <div class="service-container service-container-second flex">
         <div class="service-image service-image-second"></div>
         <div class="service-text">
           <div class="service-text-container">
@@ -68,6 +69,7 @@
               企業のPBとしてのレトルトカレー開発に自信があります。
             </p>
             <a href="#" class="button-small">詳しく見る</a>
+            <div class="clear"></div>
           </div>
         </div>
       </div>
@@ -79,7 +81,7 @@
           <span class="sub-title">- All Items -</span>
         </h1>
       </div>
-      <div class="item-container">
+      <div class="item-container flex">
         <div class="item-group">
           <a href="#" class="item-group-first">
             <div class="item-group-category">レトルトカレー<br>
@@ -116,12 +118,18 @@
       </div>
       <div class="news-container">
         <dl class="news-contents">
-          <dt>00.00.00</dt>
-          <dl>新商品のお知らせ</dl>
-          <dt>00.00.00</dt>
-          <dl>○○百貨店へ出店いたします！</dl>
-          <dt>00.00.00</dt>
-          <dl>新商品のお知らせ</dl>
+          <div class="flex">
+            <dt>00.00.00</dt>
+            <dl>新商品のお知らせ</dl>
+          </div>
+          <div class="flex">
+            <dt>00.00.00</dt>
+            <dl>○○百貨店へ出店いたします！</dl>
+          </div>
+          <div class="flex">
+            <dt>00.00.00</dt>
+            <dl>新商品のお知らせ</dl>
+          </div>
         </dl>
       </div>
       <a href="#" class="button">新着情報一覧</a>
@@ -129,26 +137,26 @@
 
     <footer class="footer">
       <div class="footer-container">
-        <div class="footer-icons">
+        <div class="footer-icons flex">
           <div class="footer-logo"></div>
-          <div class="sns-icons">
+          <div class="sns-icons flex">
             <a href="#" class="icon
             icon-size icon-twitter"></a> 
-            <a href="#" class="icon icon-size icon-insta"></a> 
-            <a href="#" class="icon icon-size icon-facebook"></a> 
+            <a href="#" class="icon icon-insta"></a> 
+            <a href="#" class="icon icon-facebook"></a> 
           </div>
         </div>
-        <div class="footer-menu">
+        <div class="footer-menu flex">
           <div class="footer-address">
             <div>〇〇市××区△△町11-11</div>
             <div>00-0000-0000</div>
           </div>
           <nav>
-            <ul class="f-menu">
-              <li><a href="#">商品一覧</a></li>
-              <li><a href="#">レトルトカレーOEM開発</a></li>
-              <li><a href="#">よくある質問</a></li>
-              <li><a href="#">会社案内</a></li>
+            <ul class="menu">
+              <li class="menu-list"><a class="menu-link" href="#">商品一覧</a></li>
+              <li class="menu-list"><a class="menu-link" href="#">レトルトカレーOEM開発</a></li>
+              <li class="menu-list"><a class="menu-link" href="#">よくある質問</a></li>
+              <li class="menu-list"><a class="menu-link" href="#">会社案内</a></li>
             </ul>
           </nav>
         </div>
