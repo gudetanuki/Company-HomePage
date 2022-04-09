@@ -78,17 +78,7 @@ h2 {
     color: $font-color-base;
   }
   &-position {
-    font-size: $font-size-30;
     margin-bottom: 30px;
-  }
-  &-name {
-    font-size: $font-size-60;
-  }
-  &-comment {
-    font-size: $font-size-30;
-  }
-  &-profile {
-    font-size: $font-size-30;
   }
 }
 .text-box {
@@ -104,13 +94,6 @@ td {
   border: 1px solid $font-color-base;
   padding: 50px 40px;
   margin: 0 5px 5px 0;
-}
-
-.beige {
-  background-color: $bgclr-beige;
-}
-.orange {
-  background-color: $bgclr-orange;
 }
 
 .outline {
