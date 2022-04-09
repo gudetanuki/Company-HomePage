@@ -1,0 +1,40 @@
+@import "base.scss";
+@import "utility.scss";
+@import "variable.scss";
+@import "mixin.scss";
+
+
+.header {
+  width: 100%;
+  height: 160px;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 10;
+  &-logo {
+    width: 10%;
+    height: auto;
+    margin: 0 0 0 50px;
+    @include top-slide-layout("../../img/logo.png");
+  }
+  &-menu {
+    justify-content: space-between;
+  }
+  &-link-area {
+    width: 13%;
+    height: 160px;
+    padding: 30px;
+    text-align: center;
+    font-size: $font-size-25;
+    color: $font-color-white;
+    background: $bgclr-orange;
+    transition: .5s;
+    &:hover {
+      background-color: white;
+      color: $bgclr-orange;
+      transition: .5s;
+    }
+  }
+  .material-icons-outlined {
+    margin-top: 10px;
+    font-size: 80px;
+  }
+}
