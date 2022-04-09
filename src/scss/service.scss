@@ -6,6 +6,8 @@
 @import "footer.scss";
 @import "utility.scss";
 @import "mixin.scss";
+@import "button.scss";
+
 
 // ーーーーーーーーーーーーーーーーーーー
 // TOPスライドの部分
@@ -58,7 +60,6 @@ h2 {
   width: 100%;
   @include position-num(relative, -50px, 0);
   &-contents {
-    display: flex;
     margin-bottom: 50px;
   }
   &-image {
@@ -120,7 +121,6 @@ h2 {
     width: 100%;
     text-align: center;
     padding: 50px 0;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -135,7 +135,6 @@ h2 {
     }
     .flex {
       padding: 20px;
-      display: flex;
       justify-content: space-between;
       .text {
         width: 45%;
