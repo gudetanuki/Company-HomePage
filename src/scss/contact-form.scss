@@ -62,10 +62,10 @@ h2 {
 .question {
   &-list-container {
     .bg-beige {
-      background: $bgclr-beige;
+      background-color: $bgclr-beige;
     }
     .bg-orange {
-      background: $bgclr-orange;
+      background-color: $bgclr-orange;
     }
   }
   &-list {
@@ -96,12 +96,12 @@ h2 {
   text-align: center;
   &-container {
     width: 90%;
-    border: 1px solid #333;
+    border: 1px solid $font-color-base;
     margin: 0 auto;
     color: $font-color-white;
   }
   &-item {
-    border: 1px solid #333;
+    border: 1px solid $font-color-base;
     padding: 30px 20px;
     font-size: $font-size-40;
     display: flex;
