@@ -1,11 +1,12 @@
 @import "reset.scss";
 @import "base.scss";
 @import "variable.scss";
+@import "utility.scss";
+@import "mixin.scss";
 @import "header.scss";
 @import "contact.scss";
 @import "footer.scss";
-@import "utility.scss";
-@import "mixin.scss";
+@import "button.scss";
 
 
 .top-slide {
@@ -44,7 +45,6 @@
   margin: -160px auto 10px;
   &-container {
     height: 500px;
-    display: flex;
     flex-direction: row-reverse;
     &:nth-child(2) {
       flex-direction: row; 
@@ -70,6 +70,12 @@
     margin-top: 40px;
     margin-bottom: 20px;
   }
+  .button-small {
+    float: right;
+  }
+  .clear {
+    clear: both;
+  }
 }
 
 .service-image-first {
@@ -92,7 +98,6 @@
   background: $bgclr-ivory;
   &-container {
     height: 815px;
-    display: flex;
   }
   &-group {
     width: 35%;
@@ -141,6 +146,9 @@
     width: 80%;
     margin: 0 auto;
     font-size: $font-size-40;
+    .flex {
+      width: 100%;
+    }
     dt, dl {
       border-bottom: 3px solid $font-color-base;
       padding: 10px 50px 60px;
@@ -148,10 +156,10 @@
       cursor: pointer;
     }
     dt {
-      float: left;
+      width: 20%;
     }
     dl {
-      margin-left: 150px;
+      width: 80%;
       text-align: left;
     }
   }

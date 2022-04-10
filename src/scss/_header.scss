@@ -1,11 +1,8 @@
 @import "base.scss";
+@import "utility.scss";
 @import "variable.scss";
 @import "mixin.scss";
 
-
-a {
-  color: $font-color-white;
-}
 
 .header {
   width: 100%;
@@ -19,7 +16,6 @@ a {
     @include top-slide-layout("../../img/logo.png");
   }
   &-menu {
-    display: flex;
     justify-content: space-between;
   }
   &-link-area {
@@ -28,6 +24,7 @@ a {
     padding: 30px;
     text-align: center;
     font-size: $font-size-25;
+    color: $font-color-white;
     background: $bgclr-orange;
     transition: .5s;
     &:hover {
