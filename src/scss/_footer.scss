@@ -1,14 +1,12 @@
 @import "base.scss";
-@import "variable.scss";
-@import "header.scss";
 @import "utility.scss";
+@import "variable.scss";
 @import "mixin.scss";
 
 .footer {
   padding: 60px 100px 20px;
   background-color: $bgclr-orange;
   &-icons {
-    display: flex;
     justify-content: space-between;
   }
   &-logo {
@@ -17,7 +15,6 @@
     @include top-slide-layout("../../img/logo.png");
   }
   &-menu {
-    display: flex;
     justify-content: space-between;
   }
   &-address {
@@ -32,13 +29,12 @@
 .sns-icons {
   width: 50%;
   height: 120px;
-  display: flex;
   justify-content: space-around;
 }
 
 .icon {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   margin: auto 0;
   &-twitter {
     @include top-slide-layout("../../img/sns-icon-twitter.png");

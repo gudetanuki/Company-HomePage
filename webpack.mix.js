@@ -16,6 +16,7 @@ mix.webpackConfig({
 .js('src/js/index.js', dist + '/js/')
 .sass('src/scss/style.scss', dist + '/css/')
 .sass('src/scss/company.scss', dist + '/css/')
+.sass('src/scss/service.scss', dist + '/css/')
 .options({
   processCssUrls: false
 })

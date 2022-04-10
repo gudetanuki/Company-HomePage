@@ -1,43 +1,5 @@
-// @import "variable.scss";
-// ーーーーーーーーーーーーーーーーーーーーー
-// 茶色いボタン部品
-// ーーーーーーーーーーーーーーーーーーーーー
+@import "variable.scss";
 
-// ボタンのベースデザイン
-.button-base {
-  border: 1px solid $font-color-base;
-  background-color: $bgclr-brown;
-  transition: all .5s; 
-  &:hover {
-    background-color: #fff;
-    color: $font-color-base;
-    transition: all .5s; 
-  } 
-}
-
-// サイト全体で使うボタンのデザイン
-.button {
-  @extend .button-base;
-  border-radius: 40px;
-  padding: 50px 170px;
-  margin: 120px auto;
-  font-size: $font-size-40;
-}
-
-// TOPページの「わたしたちに出来ること」で使用する小さめボタン
-.button-small {
-  @extend .button-base;
-  border-radius: 30px;
-  padding: 30px 70px;
-  margin-right: 0;
-  margin-left: auto;
-  font-size: $font-size-30;
-}
-
-
-// ーーーーーーーーーーーーーーーーーーー
-// h1タグのレイアウト
-// ーーーーーーーーーーーーーーーーーーー
 
 // TOPページの見出しh1タグのレイアウト
 .title {
@@ -45,81 +7,55 @@
   margin: 0 auto 50px;
 }
 
-// 日本語見出し(h1)下の英語サブ(span)
+// 日本語見出し(h1)下の英語サブ(spanタグ)
 .sub-title {
   margin-top: 10px;
   font-size: $font-size-40;
 }
 
-// ーーーーーーーーーーーーーーーーーーーーーー
-// header部分のレイアウト
-// ーーーーーーーーーーーーーーーーーーーーーー
-.h-menu {
+
+// ulタグ
+.menu {
   padding: 40px 0;
   margin-top: 50px;
   margin-left: 150px;
   display: flex;
-  li {
-    font-size: $font-size-30;
+  // liタグ
+  &-list-h {
     margin-right: 90px;
-    a {
-      position: relative;
-      &::after {
-        position :absolute;
-        bottom: 5px;
-        left: 0;
-        content: '';
-        width: 100%;
-        height: 3px;
-        background: $bgclr-orange;
-        opacity: 0;
-        visibility: hidden;
-        transition: 1s;
-      }
-      &:hover::after {
-        bottom: -7px;
-        opacity: 1;
-        visibility: visible;
-      }
+  }
+  &-list-f {
+    margin-right: 70px;
+  }
+  // aタグ
+  &-link {
+    position: relative;
+    font-size: $font-size-30;
+    color: $font-color-white;
+    &::after {
+      position :absolute;
+      bottom: 5px;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 3px;
+      background: $bgclr-orange;
+      opacity: 0;
+      visibility: hidden;
+      transition: 1s;
+    }
+    &:hover::after {
+      bottom: -7px;
+      opacity: 1;
+      visibility: visible;
     }
   }
 }
 
 
-// ーーーーーーーーーーーーーーーーーーーーーーー
-// footer部分のレイアウト
-// ーーーーーーーーーーーーーーーーーーーーーーー
-
-// footerメニューのcss設定 ulタグにこのクラスをつける
-.f-menu {
-  padding: 40px 0;
-  margin-top: 50px;
-  margin-left: 150px;
+// 要素を横並びにするためのクラス
+.flex {
   display: flex;
-  li {
-    font-size: $font-size-30;
-    margin-right: 70px;
-    a {
-      position: relative;
-      &::after {
-        position: absolute;
-        bottom: 5px;
-        left: 0;
-        content: '';
-        width: 100%;
-        height: 3px;
-        background: $bgclr-brown;
-        opacity: 0;
-        visibility: hidden;
-        transition: 1s;
-      }
-      &:hover::after {
-        bottom: -7px;
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-  }
 }
 
 // フォントサイズを指定すためのクラス
@@ -156,6 +92,3 @@
   width: 70px;
   height: 70px;
 }
-
-
-
