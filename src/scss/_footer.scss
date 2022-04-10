@@ -26,6 +26,18 @@
   }
 }
 
+.menu-link {
+  &::after {
+    position :absolute;
+    bottom: 5px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: $bgclr-brown;
+  }
+}
+
 .sns-icons {
   width: 50%;
   height: 120px;
