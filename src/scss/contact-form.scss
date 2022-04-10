@@ -7,6 +7,8 @@
 @import "footer.scss";
 @import "mixin.scss";
 @import "button.scss";
+@import "observer.scss";
+
 
 // ーーーーーーーーーーーーーーーーーーー
 // TOPスライドの部分
@@ -83,6 +85,24 @@ h2 {
   &-list-a {
     padding: 30px 50px;
     font-size: $font-size-20;
+    display: none;
+  }
+
+}
+
+.open {
+  display: block;
+  animation: 1s fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
   }
 }
 
