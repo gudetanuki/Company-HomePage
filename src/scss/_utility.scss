@@ -58,6 +58,37 @@
   display: flex;
 }
 
+// フォントサイズを指定すためのクラス
+.font-size-xl {
+  font-size: $font-size-60;
+}
+.font-size-l {
+  font-size: $font-size-50;
+}
+.font-size-m {
+  font-size: $font-size-40;
+}
+.font-size-base {
+  font-size: $font-size-30;
+}
+.font-size-s {
+  font-size: $font-size-25;
+}
+.font-size-xs {
+  font-size: $font-size-20;
+}
 
 
+// 背景色を指定するためのクラス
+.beige {
+  background-color: $bgclr-beige;
+}
+.orange {
+  background-color: $bgclr-orange;
+}
 
+// footerのsnsアイコンのサイズcss設定
+.icon-size {
+  width: 70px;
+  height: 70px;
+}
