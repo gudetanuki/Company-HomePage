@@ -1,10 +1,10 @@
 @import "reset.scss";
 @import "base.scss";
 @import "variable.scss";
+@import "utility.scss";
 @import "header.scss";
 @import "contact.scss";
 @import "footer.scss";
-@import "utility.scss";
 @import "mixin.scss";
 @import "button.scss";
 @import "observer.scss";
@@ -131,5 +131,142 @@ td {
   }
 }
 
+// ーーーーーーーーーーーーーーーーーーーーーーー
+// レスポンシブ
+// ーーーーーーーーーーーーーーーーーーーーーーー
+@media (max-width: 1024px) {
+  .top-slide {
+    height: 900px;
+    padding: 30px;
+    &-introduction {
+      height: 600px;
+      &-container {
+        padding: 50px 60px;
+      }
+    }
+  }
+  // ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+  // 代表者からのメッセージ
+  // ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+  .ceo {
+    &-container { 
+      padding: 40px 100px;
+    }
+    &-name-box {
+      padding: 10px 20px;
+      margin-bottom: 50px;
+    }
+  }
+  .text-box {
+    padding: 0 20px;
+  }
+  // ーーーーーーーーーーーーーーーーーーーーーーーーー
+  // 会社概要
+  // ーーーーーーーーーーーーーーーーーーーーーーーーー
+  td {
+    padding: 40px 30px;
+  }
+
+  .outline {
+    padding: 80px 20px;
+    margin: 50px auto 100px;
+    &-list {
+      font-size: $font-size-30;
+    }
+  }
+  // ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+  // アクセス
+  // ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+  .access {
+    padding: 80px 70px;  
+  }
+}
+
+@media (max-width: 540px) {
+  .top-slide {
+    height: 500px;
+    &-introduction {
+      @include position-num(absolute, 160px, 30px);
+      height: 300px;
+      &-container {
+        padding: 20px 10px 20px 70px;
+      }
+    }
+    &-theme {
+      font-size: $font-size-40;
+    }
+    &-title {
+      margin-bottom: 30px;
+      font-size: $font-size-30;
+    }
+    &-text {
+      font-size: $font-size-25;
+      line-height: 1;
+    }
+  }
+
+  // ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+  // 代表者からのメッセージ
+  // ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+  .ceo {
+    &-introduction {
+      @include position-num(relative, -80px, 0);
+    }
+    &-container { 
+      padding: 20px 30px;
+    }
+    &-name-box {
+      padding: 10px 20px;
+      margin-bottom: 50px;
+    }
+    &-photo {
+      width: 30%;
+      height: 550px;
+    }
+    &-message-container {
+      width: 65%;
+    }
+    &-name-box {
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    &-name {
+      font-size: $font-size-40;
+    }
+    &-position {
+      margin-bottom: 10px;
+      font-size: $font-size-25;
+    }
+  }
+  .text-box {
+    padding: 0 10px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    font-size: $font-size-25;
+  }
+
+  // ーーーーーーーーーーーーーーーーーーーーーーーーー
+  // 会社概要
+  // ーーーーーーーーーーーーーーーーーーーーーーーーー
+  td {
+    padding: 20px 10px;
+  }
+
+  .outline {
+    padding: 40px 10px;
+    margin: 0px auto 50px;
+    &-list {
+      font-size: $font-size-25;
+    }
+  }
+  // ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+  // アクセス
+  // ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+  .access {
+    padding: 40px 20px;  
+  }
+
+
+}
 
 

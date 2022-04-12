@@ -51,16 +51,16 @@ h2 {
 }
 
 
-// ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+// ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 // よくある質問
-// ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+// ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 .faq {
   padding: 100px;
   background-color: $bgclr-ivory;
-}
-.material-icons-outlined {
-  vertical-align: middle;
-  float: right;
+  .material-icons-outlined {
+    vertical-align: middle;
+    float: right;
+  }
 }
 .question {
   &-list-container {
@@ -117,12 +117,10 @@ h2 {
   text-align: center;
   &-container {
     width: 90%;
-    border: 1px solid $font-color-base;
     margin: 0 auto;
     color: $font-color-white;
   }
   &-item {
-    border: 1px solid $font-color-base;
     padding: 30px 20px;
     font-size: $font-size-40;
     display: flex;
@@ -131,3 +129,105 @@ h2 {
 }
 
 
+// ーーーーーーーーーーーーーーーーーーーーーーー
+// レスポンシブ
+// ーーーーーーーーーーーーーーーーーーーーーーー
+@media (max-width: 1024px) {
+  .top-slide {
+    height: 900px;
+    padding: 30px;
+    &-introduction {
+      height: 600px;
+      &-container {
+        padding: 50px 60px;
+      }
+    }
+  }
+  // ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+  // よくある質問
+  // ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+  .faq {
+    padding: 80px;
+  }
+  .question {
+    &-list-q {
+      padding: 40px;
+    }
+    &-list-a {
+      padding: 30px 40px;
+    }
+  }
+  // ーーーーーーーーーーーーーーーーーーーーーーーーーー
+  // お問い合わせフォーム
+  // ーーーーーーーーーーーーーーーーーーーーーーーーーー
+  .contact-form {
+    padding: 80px 80px 30px;
+    margin: 80px 0 150px;
+    background-color: $bgclr-orange;
+    &-item {
+      padding: 25px 15px;
+    }  
+  }
+}
+
+@media (max-width: 540px) {
+  .top-slide {
+    height: 500px;
+    &-introduction {
+      @include position-num(absolute, 150px, 30px);
+      height: 350px;
+      &-container {
+        padding: 20px 10px 20px 40px;
+      }
+    }
+    &-theme {
+      font-size: $font-size-40;
+    }
+    &-title {
+      margin-bottom: 30px;
+      font-size: $font-size-30;
+    }
+    &-text {
+      font-size: $font-size-25;
+      line-height: 1;
+    }
+  }
+  // ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+  // よくある質問
+  // ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+  .faq {
+    position: relative;
+    top: -100px;
+    padding: 50px 30px;
+  }
+  .question {
+    &-list-q {
+      padding: 30px;
+      font-size: $font-size-25;
+    }
+    &-list-a {
+      padding: 10px 20px;
+    }
+  }
+  // ーーーーーーーーーーーーーーーーーーーーーーーーーー
+  // お問い合わせフォーム
+  // ーーーーーーーーーーーーーーーーーーーーーーーーーー
+  .contact-form {
+    position: relative;
+    top: -100px;
+    padding: 50px 30px;
+    margin: 40px 0 0;
+    &-container {
+      width: 100%;
+    }
+    &-item {
+      padding: 20px 10px;
+      font-size: $font-size-25;
+      label {
+        width: 30%;
+        text-align: left;
+      }
+    }  
+  }
+
+}

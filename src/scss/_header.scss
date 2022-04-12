@@ -38,3 +38,131 @@
     font-size: 80px;
   }
 }
+
+// ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+// レスポンシブ幅540pxの時のみ表示されるハンバーガーメニューのcss設定
+// ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+// ーーーーーーーーーーーーーーーーー
+// ハンバーガーアイコン
+// ーーーーーーーーーーーーーーーーー
+.sp-menu {
+  padding: 30px;
+  margin-left: auto;
+  margin-right: 0;
+  display: none;
+  #open {
+    &.hide {
+      display: none;
+      /*  バツ印が出ている時は、背後のハンバーガーアイコンは消したい*/
+    }
+  }
+}
+
+#open, #close {
+  font-size: $font-size-60;
+  color: $font-color-white;
+  cursor: pointer;
+}
+
+// ーーーーーーーーーーーーーーーーーーー
+// アイコンを押したら表示されるメニュー
+// ーーーーーーーーーーーーーーーーーーー
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(250, 167, 0, 0.9);
+  z-index: 30;
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  pointer-events: none;
+  /* 透明にしただけでは、まだ重なっている状態なので下の要素が隠れて選択できない */
+  transition: opacity 0.6s;
+  &.show {
+    opacity: 1;
+    pointer-events: auto;
+    li {
+      opacity: 1;
+      transform: none;
+      &:nth-child(1) {
+        transition-delay: 0.1s;
+      }
+      &:nth-child(2) {
+        transition-delay: 0.2s;
+      }
+      &:nth-child(3) {
+        transition-delay: 0.3s;
+      }
+      &:nth-child(4) {
+        transition-delay: 0.4s;
+      }
+      &:nth-child(5) {
+        transition-delay: 0.5s;
+      }
+    }
+  }
+  #close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  // ul
+  &-menu {
+    font-size: $font-size-30;
+  }
+  // li
+  &-list {
+    margin-top: 40px;
+    opacity: 0;
+    transform: translateY(16px); 
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  // a
+  &-link {
+    color: $font-color-white;
+  }
+}
+
+
+
+// ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+// レスポンシブ
+// ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+@media (max-width: 1024px) {
+  .header {
+    &-logo {
+      width: 20%;
+      height: 160px;
+      margin: 0;
+    }
+    &-link-area {
+      width: 18%;
+      padding: 30px 20px;
+    }
+    .material-icons-outlined {
+      font-size: 70px;
+    }
+  }
+}
+@media (max-width: 540px) {
+  .header {
+    &-logo {
+      height: 100px;
+    }
+    &-link-area {
+      display: none;
+    }
+    .menu {
+      display: none;
+    }
+    .sp-menu {
+      display: block;
+    }
+  }
+} 
+
+
+
