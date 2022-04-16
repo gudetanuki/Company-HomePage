@@ -1,7 +1,8 @@
-import { toggleAccrdion } from "./accordion.js";
+import { openAnswer, closeAnswer } from "./accordion.js";
 import { updateObserver } from "./observer.js";
 import { toggleHamburgerMenu } from "./hamburger.js";
 
-toggleAccrdion();
+window.openAnswer = openAnswer;
+window.closeAnswer = closeAnswer;
 updateObserver();
 toggleHamburgerMenu();

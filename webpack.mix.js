@@ -14,7 +14,6 @@ mix.webpackConfig({
 })
 .setPublicPath(dist)
 .js('src/js/main.js', dist + '/js/')
-.js('src/js/main2.js', dist + '/js/')
 .sass('src/scss/style.scss', dist + '/css/')
 .sass('src/scss/contact-form.scss', dist + '/css/')
 .sass('src/scss/company.scss', dist + '/css/')

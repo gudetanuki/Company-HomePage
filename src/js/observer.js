@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 const targets = document.querySelectorAll('.fadein');
 
