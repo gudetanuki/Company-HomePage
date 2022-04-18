@@ -1,8 +1,3 @@
-@import "base.scss";
-@import "utility.scss";
-@import "variable.scss";
-@import "mixin.scss";
-
 .footer {
   padding: 60px 100px 20px;
   background-color: $bgclr-orange;
@@ -63,4 +58,60 @@
   margin-top: 60px;
   font-size: $font-size-25;
   text-align: center;
+}
+
+
+// ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+// レスポンシブ
+// ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+@media (max-width: 1024px) {
+  .footer {
+    padding: 40px 60px 20px;
+    &-address {
+      font-size: $font-size-25;
+    }
+  }
+  .menu {
+    margin-top: 30px;
+  }
+  .sns-icons {
+    height: 100px;
+  }
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+  .copylight {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer {
+    padding: 20px 40px;
+    &-address {
+      font-size: $font-size-20;
+    }
+  }
+  .menu {
+    padding: 0 20px;
+    margin-top: 20px;
+    flex-direction: column;
+    &-list-f {
+      margin-right: 0;
+      margin-bottom: 20px;
+      font-size: $font-size-20;
+    }
+  }
+  .sns-icons {
+    height: 50px;
+    padding: 0 20px;
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  .copylight {
+    margin-top: 20px;
+  }
 }

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../img/favicon.png">
   <link rel="stylesheet" href="css/contact-form.css">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone" rel="stylesheet">
   <title>株式会社ミッション</title>
@@ -26,6 +27,21 @@
           email
         </span>
       </a>
+      <div class="sp-menu">
+        <span class="material-icons" id="open">menu</span>
+      </div>
+    </div>
+    <div class="overlay">
+      <span class="material-icons" id="close">close</span>
+      <nav>
+        <ul class="overlay-menu">
+          <li class="overlay-list"><a class="overlay-link" href="#">商品一覧</a></li>
+          <li class="overlay-list"><a class="overlay-link" href="service.html">レトルトカレーOEM開発</a></li>
+          <li class="overlay-list"><a class="overlay-link" href="contact.html#FAQ">よくある質問</a></li>
+          <li class="overlay-list"><a class="overlay-link" href="company.html">会社案内</a></li>
+          <li class="overlay-list"><a class="overlay-link" href="company.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -56,50 +72,50 @@
       <div class="question-list-container">
         <ul class="question-list">
           <li class="question-common">
-            <div class="question-list-q bg-beige fadein">見積もりに費用はかかりますか？
+            <div class="question-list-q bg-beige fadein" onclick="openAnswer(this)">見積もりに費用はかかりますか？
               <span class="material-icons-outlined">add</span>            
             </div>
-            <div class="question-list-a">ご契約まで費用はかかりません。ご相談・概算お見積もりは無料ですので、お気軽にご連絡ください。
+            <div class="question-list-a" onclick="closeAnswer(this)">ご契約まで費用はかかりません。ご相談・概算お見積もりは無料ですので、お気軽にご連絡ください。
               <span class="material-icons-outlined">remove</span>
             </div>
           </li>
           <li class="question-common">
-            <div class="question-list-q bg-orange fadein">どんな製品を作ることができますか？
+            <div class="question-list-q bg-orange fadein" onclick="openAnswer(this)">どんな製品を作ることができますか？
               <span class="material-icons-outlined">add</span>
             </div>
-            <div class="question-list-a">当社はレトルトカレー専門のOEM・PB企画開発会社です。オリジナルのレトルトカレーを、企画から販売までサポートいたします。
+            <div class="question-list-a" onclick="closeAnswer(this)">当社はレトルトカレー専門のOEM・PB企画開発会社です。オリジナルのレトルトカレーを、企画から販売までサポートいたします。
               <span class="material-icons-outlined">remove</span>
             </div>
           </li>
           <li class="question-common">
-            <div class="question-list-q bg-beige fadein">依頼から商品化まで、どれくらいかかりますか？
+            <div class="question-list-q bg-beige fadein" onclick="openAnswer(this)">依頼から商品化まで、どれくらいかかりますか？
               <span class="material-icons-outlined">add</span>
             </div>
-            <div class="question-list-a">打ち合わせから7日ほどで試作品をお作りし、スムーズに行けば45日ほどで商品化となります。お急ぎの場合もご相談に応じますので、ご連絡ください。
+            <div class="question-list-a" onclick="closeAnswer(this)">打ち合わせから7日ほどで試作品をお作りし、スムーズに行けば45日ほどで商品化となります。お急ぎの場合もご相談に応じますので、ご連絡ください。
               <span class="material-icons-outlined">remove</span>
             </div>
           </li>
           <li class="question-common">
-            <div class="question-list-q bg-orange fadein">打ち合わせの際、何を用意すれば良いですか？
+            <div class="question-list-q bg-orange fadein" onclick="openAnswer(this)">打ち合わせの際、何を用意すれば良いですか？
               <span class="material-icons-outlined">add</span>
             </div>
-            <div class="question-list-a">ご用意いただくものはございません。原料に使いたい素材があれば、お持ちください。まずは、商品をお作りになる目的やイメージからお伺いいたします。
+            <div class="question-list-a" onclick="closeAnswer(this)">ご用意いただくものはございません。原料に使いたい素材があれば、お持ちください。まずは、商品をお作りになる目的やイメージからお伺いいたします。
               <span class="material-icons-outlined">remove</span>
             </div>
           </li>
           <li class="question-common">
-            <div class="question-list-q bg-beige fadein">賞味期限はどのくらい持ちますか？
+            <div class="question-list-q bg-beige fadein" onclick="openAnswer(this)">賞味期限はどのくらい持ちますか？
               <span class="material-icons-outlined">add</span>
             </div>
-            <div class="question-list-a">常温で2年ほど持ちます。レトルトカレーは賞味期限の長い食品ですので、利便性に優れています。
+            <div class="question-list-a" onclick="closeAnswer(this)">常温で2年ほど持ちます。レトルトカレーは賞味期限の長い食品ですので、利便性に優れています。
               <span class="material-icons-outlined">remove</span>
             </div>
           </li>
           <li class="question-common">
-            <div class="question-list-q bg-orange fadein">製品について、どこまで指定できますか？
+            <div class="question-list-q bg-orange fadein" onclick="openAnswer(this)">製品について、どこまで指定できますか？
               <span class="material-icons-outlined">add</span>
             </div>
-            <div class="question-list-a">外箱のデザインや原料、味など、詳細までご相談しながら決めていきます。「お任せで」ということであれば、ご提案もいたします。
+            <div class="question-list-a" onclick="closeAnswer(this)">外箱のデザインや原料、味など、詳細までご相談しながら決めていきます。「お任せで」ということであれば、ご提案もいたします。
               <span class="material-icons-outlined">remove</span>
             </div>
           </li>

@@ -1,13 +1,7 @@
-@import "reset.scss";
-@import "base.scss";
-@import "variable.scss";
-@import "utility.scss";
-@import "mixin.scss";
-@import "header.scss";
-@import "contact.scss";
-@import "footer.scss";
-@import "button.scss";
-@import "observer.scss";
+@import "base/*.scss";
+@import "mixin/*.scss";
+@import "module/*.scss";
+@import "setting/*.scss";
 
 
 .top-slide {
@@ -46,9 +40,8 @@
   margin: -160px auto 10px;
   &-container {
     height: 500px;
-    flex-direction: row-reverse;
-    &:nth-child(2) {
-      flex-direction: row; 
+    &-second {
+      flex-direction: row-reverse;
     }
   }
   &-image {
@@ -162,6 +155,148 @@
     dl {
       width: 80%;
       text-align: left;
+    }
+  }
+}
+
+
+// ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+// レスポンシブ
+// ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+@media (max-width: 1024px) {
+  // ーーーーーーーーーーーーーーーーーーーーーー
+  // わたしたちにできること
+  // ーーーーーーーーーーーーーーーーーーーーーー
+  .service {
+    height: 1100px;
+    padding: 50px 0;
+    &-container {
+      height: 400px;
+    }
+    &-text {
+      padding: 45px 35px;
+    }
+  }
+
+  // ーーーーーーーーーーーーーーーーーーーーー
+  // 商品一覧
+  // ーーーーーーーーーーーーーーーーーーーーー
+  .item {
+    height: 1100px;
+    padding: 50px 0;
+    margin: 0 auto 50px;
+    &-container {
+      height: 600px;
+    }
+    &-group {
+      height: 100%;
+      a {
+        height: 100%;
+      }
+      &-category{
+        margin-top: 400px;
+      }
+    }
+  }
+
+  // ーーーーーーーーーーーーーーーーーーーーーーーー
+  // 新着情報
+  // ーーーーーーーーーーーーーーーーーーーーーーーー
+  .news {
+    height: 900px;
+    padding: 50px 0;
+    margin: 50px auto 100px;
+    &-contents {
+      dt, dl {
+        padding: 10px 35px 45px;
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .top-slide {
+    height: 400px;
+  }
+  .catch-phrase {
+    padding: 20px 40px;
+    &-container {
+      div {
+        padding: 5px;
+        font-size: $font-size-40;
+      }
+    }
+  }
+  // ーーーーーーーーーーーーーーーーーーーーーー
+  // わたしたちにできること
+  // ーーーーーーーーーーーーーーーーーーーーーー
+  .service {
+    height: 1600px;
+    padding: 50px 0;
+    margin-bottom: 50px;
+    &-container {
+      height: 700px;
+      margin-bottom: 30px;
+      flex-direction: column;
+    }
+    &-image {
+      width: 100%;
+      height: 100%;
+    }
+    &-text {
+      width: 100%;
+      height: 80%;
+      padding: 40px 20px;
+      &-container {
+        padding: 20px;
+        h2 {
+          font-size: $font-size-30;
+        }
+        p {
+          font-size: $font-size-25;
+        }
+      }
+    }
+  }
+
+  // ーーーーーーーーーーーーーーーーーーーーー
+  // 商品一覧
+  // ーーーーーーーーーーーーーーーーーーーーー
+  .item {
+    height: 900px;
+    padding: 50px 0;
+    &-container {
+      height: 600px;
+      flex-direction: column;
+    }
+    &-group {
+      width: 100%;
+      height: 33%;
+      a {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 0;
+      }
+      &-category{
+        margin-top: 60px;
+      }
+    }
+  }
+
+  // ーーーーーーーーーーーーーーーーーーーーーーーー
+  // 新着情報
+  // ーーーーーーーーーーーーーーーーーーーーーーーー
+  .news {
+    height: 550px;
+    padding: 50px 0;
+    margin: 50px auto 100px;
+    &-contents {
+      font-size: $font-size-25;
+      dt, dl {
+        padding: 5px 15px 20px;
+        margin-top: 30px;
+      }
     }
   }
 }

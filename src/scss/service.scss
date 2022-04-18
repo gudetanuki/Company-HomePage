@@ -1,13 +1,7 @@
-@import "reset.scss";
-@import "base.scss";
-@import "variable.scss";
-@import "header.scss";
-@import "contact.scss";
-@import "footer.scss";
-@import "utility.scss";
-@import "mixin.scss";
-@import "button.scss";
-@import "observer.scss";
+@import "base/*.scss";
+@import "mixin/*.scss";
+@import "module/*.scss";
+@import "setting/*.scss";
 
 
 
@@ -182,5 +176,181 @@ h2 {
   }
   &-image {
     max-width: 100%;
+  }
+}
+
+
+// ーーーーーーーーーーーーーーーーーーーーーーー
+// レスポンシブ
+// ーーーーーーーーーーーーーーーーーーーーーーー
+@media (max-width: 1024px) {
+  .top-slide {
+    height: 900px;
+    padding: 30px;
+    &-introduction {
+      height: 600px;
+      &-container {
+        padding: 50px 60px;
+      }
+    }
+  }
+
+  // ーーーーーーーーーーーーーーーーーーーーー
+  // OEM開発について
+  // ーーーーーーーーーーーーーーーーーーーーー
+  .service {
+    &-image {
+      width: 40%;
+      height: 500px;
+    }
+    &-text {
+      height: 500px;
+      padding: 40px;
+      &-title {
+        margin-bottom: 70px;
+      }
+      &-box {
+        width: 90%;
+      }
+    }
+  }
+
+  // ーーーーーーーーーーーーーーーーーーーーーーーーー
+  // わたしたちの強み
+  // ーーーーーーーーーーーーーーーーーーーーーーーーー
+  .strong-points {
+    padding: 80px 50px 0;
+    &-message {
+      .message-text {
+        margin-top: 50px;
+      }
+    }
+  }
+  .points {
+    &-container {
+      padding: 30px 0;
+    }
+    &-content {
+      padding: 30px;
+      margin-bottom: 30px;
+      &-title {
+        margin-bottom: 30px;
+      }
+      .flex {
+        padding: 10px;
+      }
+    }
+  }
+  
+  // ーーーーーーーーーーーーーーーーーーーーーー
+  // 開発の流れ
+  // ーーーーーーーーーーーーーーーーーーーーーー
+  .flow {
+    padding: 80px 60px;
+    margin: 80px 0;
+    &-image-container {
+      height: 300px;
+      margin-top: 50px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .top-slide {
+    height: 500px;
+    &-introduction {
+      @include position-num(absolute, 160px, 30px);
+      height: 300px;
+      &-container {
+        padding: 20px 10px 20px 70px;
+      }
+    }
+    &-theme {
+      font-size: $font-size-40;
+    }
+    &-title {
+      margin-bottom: 30px;
+      font-size: $font-size-30;
+    }
+    &-text {
+      font-size: $font-size-25;
+      line-height: 1;
+    }
+  }
+
+  // ーーーーーーーーーーーーーーーーーーーーー
+  // OEM開発について
+  // ーーーーーーーーーーーーーーーーーーーーー
+  .service {
+    &-contents {
+      margin-bottom: 30px;
+      flex-direction: column;
+    }
+    &-image {
+      display: none;
+    }
+    &-text {
+      width: 100%;
+      height: 350px;
+      padding: 40px;
+      &-title {
+        margin-bottom: 30px;
+        font-size: $font-size-40;
+      }
+      &-box {
+        width: 100%;
+        font-size: $font-size-25;
+      }
+    }
+  }
+
+  // ーーーーーーーーーーーーーーーーーーーーーーーーー
+  // わたしたちの強み
+  // ーーーーーーーーーーーーーーーーーーーーーーーーー
+  .strong-points {
+    padding: 50px 30px;
+    &-message {
+      h2 {
+        font-size: $font-size-40;
+        width: 77%;
+        margin: 0 auto;
+      }
+      .message-text {
+        margin-top: 30px;
+        font-size: $font-size-25;
+        line-height: 1.5;
+      }
+    }
+    &-title {
+      margin: 80px 0 20px;
+      font-size: $font-size-40;
+    }
+  }
+  .points {
+    &-container {
+      flex-direction: column;
+    }
+    &-content {
+      width: 100%;
+      &-title {
+        font-size: $font-size-30;
+      }
+    }
+  }
+  
+  // ーーーーーーーーーーーーーーーーーーーーーー
+  // 開発の流れ
+  // ーーーーーーーーーーーーーーーーーーーーーー
+  .flow {
+    padding: 20px 0;
+    margin: 80px 0;
+    .title {
+      margin: 20px 0;
+      font-size: $font-size-40;
+    }
+    &-image-container {
+      height: 200px;
+      margin-top: 30px;
+    }
   }
 }

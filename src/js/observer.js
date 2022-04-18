@@ -15,9 +15,14 @@ const options = {
   rootMargin: '0px 0px -100px',
 };
 
-const observer = new IntersectionObserver(callback, options);
-targets.forEach(target => {
-  observer.observe(target);
-});
+const updateObserver = function() {
+  const observer = new IntersectionObserver(callback, options);
+  targets.forEach(target => {
+    observer.observe(target);
+  });
 
-export {observer};
+};
+
+
+
+export {updateObserver};

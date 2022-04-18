@@ -1,6 +1,3 @@
-@import "variable.scss";
-
-
 // TOPページの見出しh1タグのレイアウト
 .title {
   text-align: center;
@@ -52,7 +49,6 @@
   }
 }
 
-
 // 要素を横並びにするためのクラス
 .flex {
   display: flex;
@@ -78,7 +74,6 @@
   font-size: $font-size-20;
 }
 
-
 // 背景色を指定するためのクラス
 .beige {
   background-color: $bgclr-beige;
@@ -91,4 +86,41 @@
 .icon-size {
   width: 70px;
   height: 70px;
+}
+
+
+// ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+// レスポンシブ
+// ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+@media (max-width: 1024px) {
+  // ulタグ
+  .menu {
+    margin-left: 0;
+    // liタグ
+    &-list-h {
+      margin-right: 50px;
+    }
+    &-list-f {
+      margin-right: 40px;
+    }
+    // aタグ
+    &-link {
+      font-size: $font-size-25;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  // TOPページの見出しh1タグのレイアウト
+  .title {
+    text-align: center;
+    margin: 0 auto 30px;
+    h1 {
+      font-size: $font-size-40;
+    }
+  }
+  // 日本語見出し(h1)下の英語サブ(spanタグ)
+  .sub-title {
+    font-size: $font-size-30;
+  }
 }

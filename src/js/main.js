@@ -1,6 +1,8 @@
-import { accordionQuestion, accordionAnswer} from "./accordion.js";
-import { observer } from "./observer.js";
+import { openAnswer, closeAnswer } from "./accordion.js";
+import { updateObserver } from "./observer.js";
+import { toggleHamburgerMenu } from "./hamburger.js";
 
-accordionQuestion();
-accordionAnswer();
-observer();
+window.openAnswer = openAnswer;
+window.closeAnswer = closeAnswer;
+updateObserver();
+toggleHamburgerMenu();
