@@ -10,8 +10,7 @@
 @mixin position-num($position, $top, $left) {
   position: $position;
   top: $top;
-  left: $left;
-  
+  left: $left; 
 }
 
 

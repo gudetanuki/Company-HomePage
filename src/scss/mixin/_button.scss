@@ -53,18 +53,18 @@
 }
 
 @media (max-width: 540px) {
-    // サイト全体で使うボタンのデザイン
-    .button {
-      padding: 20px 70px;
-      margin: 40px auto 20px;
-      border-radius: 20px;
-      font-size: $font-size-30;
-      // TOPページの「わたしたちに出来ること」で使用する小さめボタン
-      &-small {
-        padding: 10px 35px;
-        margin-top: 20px;
-        border-radius: 10px;
-        font-size: $font-size-25;
-      }
+  // サイト全体で使うボタンのデザイン
+  .button {
+    padding: 20px 70px;
+    margin: 40px auto 20px;
+    border-radius: 20px;
+    font-size: $font-size-30;
+    // TOPページの「わたしたちに出来ること」で使用する小さめボタン
+    &-small {
+      padding: 10px 35px;
+      margin-top: 20px;
+      border-radius: 10px;
+      font-size: $font-size-25;
     }
+  }
 }
