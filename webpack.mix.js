@@ -1,4 +1,6 @@
 const mix = require('laravel-mix');
+require('laravel-mix-ejs')
+
 const dist = 'dist';
 
 mix.webpackConfig({
@@ -14,6 +16,10 @@ mix.webpackConfig({
 })
 .setPublicPath(dist)
 .js('src/js/main.js', dist + '/js/')
+.ejs('src/html/index.ejs', dist )
+.ejs('src/html/service.ejs', dist )
+.ejs('src/html/contact-form.ejs', dist )
+.ejs('src/html/company.ejs', dist )
 .sass('src/scss/style.scss', dist + '/css/')
 .sass('src/scss/contact-form.scss', dist + '/css/')
 .sass('src/scss/company.scss', dist + '/css/')
@@ -28,3 +34,4 @@ if (mix.inProduction()) {
 } else {
   mix.sourceMaps();
 }
+
