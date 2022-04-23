@@ -1,12 +1,4 @@
-#html
-dist/*.html
-
-#js
-dist/js
-
-#css
-dist/css
-
+dist
 #img
 img
 
