@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
-<% include _head, {pass:css/service.css} %>
+  <%- include('_head' , {pass:'./css/service.css'}) %>
 <body>
-  <% include _header %>
+  <%- include('_header') %>
   <main>
-    <% include _service %>
-    <% include _contact %>
+    <%- include('_service') %>
+    <%- include('_contact') %>
   </main>
-  <% include _footer %>
+  <%- include('_footer') %>
   <script src="./js/main.js"></script>
 </body>
 </html>
