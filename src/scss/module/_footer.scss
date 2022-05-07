@@ -7,7 +7,7 @@
   &-logo {
     width: 15%;
     height: auto;
-    @include top-slide-layout("../../img/logo.png");
+    @include top-slide-layout("../img/logo.png");
   }
   &-menu {
     justify-content: space-between;

@@ -645,7 +645,7 @@ input, textarea {
 .footer-logo {
   width: 15%;
   height: auto;
-  background-image: url("../../img/logo.png");
+  background-image: url("../img/logo.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -783,7 +783,7 @@ input, textarea {
   width: 10%;
   height: auto;
   margin: 0 0 0 50px;
-  background-image: url("../../img/logo.png");
+  background-image: url("../img/logo.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -929,7 +929,7 @@ h2 {
 }
 
 .top-slide {
-  background-image: url("../../img/top-slide3.jpeg");
+  background-image: url("../img/top-slide3.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -13,7 +13,7 @@ h2 {
 }
 
 .top-slide {
-  @include top-slide-layout("../../img/top-slide3.jpeg");
+  @include top-slide-layout("../img/top-slide3.jpeg");
   @include position-num(relative, -160px, 0);
   width: 100%;
   height: 1070px;

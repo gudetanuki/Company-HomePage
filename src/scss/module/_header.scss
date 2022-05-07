@@ -7,7 +7,7 @@
     width: 10%;
     height: auto;
     margin: 0 0 0 50px;
-    @include top-slide-layout("../../img/logo.png");
+    @include top-slide-layout("../img/logo.png");
   }
   &-menu {
     justify-content: space-between;
