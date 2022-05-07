@@ -63,7 +63,7 @@ h2 {
     justify-content: space-between;
   }
   &-photo {
-    @include top-slide-layout("../../img/suit_double_businessman.png");
+    @include top-slide-layout("../img/suit_double_businessman.png");
     width: 25%;
     height: 770px;
   }

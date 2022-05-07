@@ -985,7 +985,7 @@ h2 {
   justify-content: space-between;
 }
 .ceo-photo {
-  background-image: url("../../img/suit_double_businessman.png");
+  background-image: url("../img/suit_double_businessman.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

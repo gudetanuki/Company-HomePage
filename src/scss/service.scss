@@ -14,7 +14,7 @@ h2 {
 }
 
 .top-slide {
-  @include top-slide-layout("../../img/top-slide2.jpeg");
+  @include top-slide-layout("../img/top-slide2.jpeg");
   @include position-num(relative, -160px, 0);
   width: 100%;
   height: 1070px;
@@ -79,13 +79,13 @@ h2 {
   }
   &-contents-first {
     .service-image {
-      @include top-slide-layout("../../img/oem-service1.jpeg");
+      @include top-slide-layout("../img/oem-service1.jpeg");
     }
   }
   &-contents-second {
     flex-direction: row-reverse;
     .service-image {
-      @include top-slide-layout("../../img/strong-point2.jpeg");
+      @include top-slide-layout("../img/strong-point2.jpeg");
     }
   }
 }
@@ -146,16 +146,16 @@ h2 {
     width: 45%;
     height: auto;
     &-first {
-      @include top-slide-layout("../../img/strong-point1.jpeg");
+      @include top-slide-layout("../img/strong-point1.jpeg");
     }
     &-second {
-      @include top-slide-layout("../../img/strong-point2.jpeg");
+      @include top-slide-layout("../img/strong-point2.jpeg");
     }
     &-third {
-      @include top-slide-layout("../../img/strong-point3.jpeg");
+      @include top-slide-layout("../img/strong-point3.jpeg");
     }
     &-fourth {
-      @include top-slide-layout("../../img/strong-point4.jpeg");
+      @include top-slide-layout("../img/strong-point4.jpeg");
     }
   }
 }

@@ -6,7 +6,7 @@
 
 
 .top-slide {
-  @include top-slide-layout("../../img/top-slide1.jpeg");
+  @include top-slide-layout("../img/top-slide1.jpeg");
   @include position-num(relative, -160px, 0);
   width: 100%;
   height: 1070px;
@@ -74,11 +74,11 @@
 }
 
 .service-image-first {
-  @include top-slide-layout("../../img/what-we-can1.jpeg");
+  @include top-slide-layout("../img/what-we-can1.jpeg");
 }
 
 .service-image-second {
-  @include top-slide-layout("../../img/what-we-can2.jpeg");  
+  @include top-slide-layout("../img/what-we-can2.jpeg");  
 }
 
 // ーーーーーーーーーーーーーーーーーー
@@ -115,13 +115,13 @@
       color: $font-color-white;
     }
     &-first {
-      @include top-slide-layout("../../img/top-slide2.jpeg");  
+      @include top-slide-layout("../img/top-slide2.jpeg");  
     }
     &-second {
-      @include top-slide-layout("../../img/items-image2.jpeg");  
+      @include top-slide-layout("../img/items-image2.jpeg");  
     }
     &-third {
-      @include top-slide-layout("../../img/items-image3.jpeg");  
+      @include top-slide-layout("../img/items-image3.jpeg");  
     }
   }
 

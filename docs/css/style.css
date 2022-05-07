@@ -925,7 +925,7 @@ input, textarea {
 }
 
 .top-slide {
-  background-image: url("../../img/top-slide1.jpeg");
+  background-image: url("../img/top-slide1.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -995,7 +995,7 @@ input, textarea {
 }
 
 .service-image-first {
-  background-image: url("../../img/what-we-can1.jpeg");
+  background-image: url("../img/what-we-can1.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1004,7 +1004,7 @@ input, textarea {
 }
 
 .service-image-second {
-  background-image: url("../../img/what-we-can2.jpeg");
+  background-image: url("../img/what-we-can2.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1045,7 +1045,7 @@ input, textarea {
   color: #fff;
 }
 .item-group-first {
-  background-image: url("../../img/top-slide2.jpeg");
+  background-image: url("../img/top-slide2.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1053,7 +1053,7 @@ input, textarea {
      object-fit: cover;
 }
 .item-group-second {
-  background-image: url("../../img/items-image2.jpeg");
+  background-image: url("../img/items-image2.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1061,7 +1061,7 @@ input, textarea {
      object-fit: cover;
 }
 .item-group-third {
-  background-image: url("../../img/items-image3.jpeg");
+  background-image: url("../img/items-image3.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

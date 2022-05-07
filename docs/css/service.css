@@ -929,7 +929,7 @@ h2 {
 }
 
 .top-slide {
-  background-image: url("../../img/top-slide2.jpeg");
+  background-image: url("../img/top-slide2.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -998,7 +998,7 @@ h2 {
   line-height: 2;
 }
 .service-contents-first .service-image {
-  background-image: url("../../img/oem-service1.jpeg");
+  background-image: url("../img/oem-service1.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1009,7 +1009,7 @@ h2 {
   flex-direction: row-reverse;
 }
 .service-contents-second .service-image {
-  background-image: url("../../img/strong-point2.jpeg");
+  background-image: url("../img/strong-point2.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1069,7 +1069,7 @@ h2 {
   height: auto;
 }
 .points-image-first {
-  background-image: url("../../img/strong-point1.jpeg");
+  background-image: url("../img/strong-point1.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1077,7 +1077,7 @@ h2 {
      object-fit: cover;
 }
 .points-image-second {
-  background-image: url("../../img/strong-point2.jpeg");
+  background-image: url("../img/strong-point2.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1085,7 +1085,7 @@ h2 {
      object-fit: cover;
 }
 .points-image-third {
-  background-image: url("../../img/strong-point3.jpeg");
+  background-image: url("../img/strong-point3.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1093,7 +1093,7 @@ h2 {
      object-fit: cover;
 }
 .points-image-fourth {
-  background-image: url("../../img/strong-point4.jpeg");
+  background-image: url("../img/strong-point4.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
