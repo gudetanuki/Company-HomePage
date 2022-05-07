@@ -685,7 +685,7 @@ input, textarea {
   margin: auto 0;
 }
 .icon-twitter {
-  background-image: url("../../img/sns-icon-twitter.png");
+  background-image: url("../img/sns-icon-twitter.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -693,7 +693,7 @@ input, textarea {
      object-fit: cover;
 }
 .icon-insta {
-  background-image: url("../../img/sns-icon-insta.png");
+  background-image: url("../img/sns-icon-insta.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -701,7 +701,7 @@ input, textarea {
      object-fit: cover;
 }
 .icon-facebook {
-  background-image: url("../../img/sns-icon-facebook.png");
+  background-image: url("../img/sns-icon-facebook.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

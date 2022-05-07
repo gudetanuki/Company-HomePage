@@ -44,13 +44,13 @@
   height: 70px;
   margin: auto 0;
   &-twitter {
-    @include top-slide-layout("../../img/sns-icon-twitter.png");
+    @include top-slide-layout("../img/sns-icon-twitter.png");
   }
   &-insta {
-    @include top-slide-layout("../../img/sns-icon-insta.png");
+    @include top-slide-layout("../img/sns-icon-insta.png");
   }
   &-facebook {
-    @include top-slide-layout("../../img/sns-icon-facebook.png");
+    @include top-slide-layout("../img/sns-icon-facebook.png");
   }
 }
 
