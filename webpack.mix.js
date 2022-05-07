@@ -1,7 +1,7 @@
 const mix = require('laravel-mix');
 require('laravel-mix-ejs')
 
-const dist = 'dist';
+const dist = 'docs';
 
 mix.webpackConfig({
   module: {
